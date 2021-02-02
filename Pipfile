@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-tinymce = "*"
+django-ckeditor = "*"
+django-fontawesome-5 = "*"
+crispy-tailwind = "*"
+django-crispy-forms = "*"
+psycopg2 = "*"
+pillow = "*"
+django-environ = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

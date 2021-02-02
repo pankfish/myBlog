@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+{% for item in object %}
+<div class=" py-4 px-4 bg-gray-600 my-2 align-middle mx-auto rounded-md md:w-2/3 text-gray-50
+                shadow-md">
+    <h3 class="text-lg font-semibold ">{{ item.title }}</h3> 
+    <p>Written by: {{ item.author }} on {{ item.created }} <a href="{{ item.get_absolute_url }}">
+        <span class="text-red-200">read</span></a></p>
+    </div>
+    {% endfor %}
+    {% endblock  %}

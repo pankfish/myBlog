@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load tailwind_filters %}
+
+{% block content %}
+<form action="" class="w-2/3 mx-auto"method="POST"> {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="Send">
+</form>
+{% endblock %}

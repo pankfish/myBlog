@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}}
+{% block content %}
+<div class="md:w-2/3 sm:w-5/6 mx-auto  m-1">
+    <section  class="w-full shadow-md my-5 px-3">
+        <header class="text-center py-3 shadow-md mb-4">
+            <h3 class="text-3xl">Coding</h3>
+        </header>
+        
+        <p class="mb-4">I've been studying non-stop since April 2019.  I opened my laptop in a hotel room 
+            while on vacation with my wife in Colorado and for some reason logged into Codecademy.
+            From there I learned computer science principals, front end web development, back end
+            web development, as well as design principals.
+        </p>
+        <ul class="flex justify-center space-x-4 pb-4">
+            <li><img class="h-10"src="{% static 'img/python-logo.svg' %}"></li>
+            <li><img class="h-10"src="{% static 'img/javascript.svg' %}"></li>
+            <li><img class="h-10 inline-block" src="{% static 'img/react.svg' %}">React</li>
+            <li><img class="h-10" src="{% static 'img/django.svg' %}"> </li>
+            <li><img class="h-10" src="{% static 'img/postgresql.svg' %}"></li>
+        </ul>
+    </section>
+    <section class="w-full shadow-md my-5 px-3">
+        <header class="text-center py-3 shadow-md mb-4">
+            <h3 class="text-3xl">Music</h3>
+        </header>
+        <div class="relative flex mx-auto justify-center"><img src="{% static 'img/rockstarDaddy.jpg' %}">
+        <div class="absolute top-10 right-40"><h3 class="text-xl bg-blue-200 bg-opacity-50 px-3">I am a rock God!</h3></div>
+        </div>
+        
+    </section>
+    </div>
+    {% endblock %}

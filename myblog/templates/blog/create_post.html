@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<head>{{ form.media }}</head>
+<form method="POST" class="block "> {% csrf_token %}
+    {{ form.as_ul }}
+    <input type="submit" value="Save" />
+</form>
+{% endblock %}

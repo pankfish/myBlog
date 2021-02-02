@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load fontawesome_5 %}
+<head>
+    {% fontawesome_5_static %} 
+</head>
+
+
+{% block content %}
+
+<div class="md:py-5 sm:py-2 mx-auto shadow-md md:w-2/3 sm:w-full text-center mb-4">
+<h1 class="text-2xl mx-2 font-bold rounded-md text-gray-800 bg-blue-300 bg-opacity-50 p-2">WebDev Tim</h1>
+<h3 class="text-gray-700">A WebDev for the People<span class="">...</span></h3>
+
+{% load static %}
+
+
+<img class="max-h-80 mx-auto my-4   rounded-md"src="{% static 'img/suspendersGuy.jpg' %}" alt="Suspenders at store">
+<div class="social text-3xl inline-grid grid-cols-3 gap-x-6">
+    <span class="text-blue-400 mb-3 transform hover:text-5xl tranistion duration-500 ease-in-out"><a class="hover:bg-gray-300"href="">
+        {% fa5_icon 'twitter' 'fab' %}</a></span>
+   <span><a href="">{% fa5_icon 'github' 'fab' %}</a></span> 
+    <span class="text-green-300"><a href="">{% fa5_icon 'linkedin' 'fab' %}</a></span></div>
+  
+       
+</div>
+{% endblock %}
